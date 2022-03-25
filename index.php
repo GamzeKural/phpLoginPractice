@@ -25,10 +25,10 @@ include 'fonksiyon/helper.php';
         form{position: relative;}
     </style>
 </head>
-<body class="<?php cook('color') ? cook('color') : 'bg-dark' ?>">
+<body class="<?=cook('color') ? cook('color') : 'bg-dark' ?>">
 <div class="d-flex align-items-center justify-content-center p-4"><img height="" src="kodl.png" alt=""></div>
 <div  class="container d-flex align-items-center justify-content-center">
-    <div class="card <?php cook('color') ? cook('color') : 'bg-dark' ?>" style="width: 18rem;">
+    <div class="card <?= cook('color') ? cook('color') : 'bg-dark' ?>" style="width: 18rem;">
         <div class="card-header bg-primary">
             Profilim
         </div>
@@ -43,7 +43,7 @@ include 'fonksiyon/helper.php';
             // }
             ?>
             <form action="islem.php?islem=hakkimda" method="post">
-                <textarea class="form-control <?php cook('color') ? cook('color') : 'bg-dark' ?> text-primary" name="hakkimda" id="" cols="30" rows="10">Merhaba, ben Gamze Kural. 7 Ocak 1998 yılında dünyaya geldim. İstanbul'da yaşıyorum.</textarea>
+                <textarea class="form-control <?= cook('color') ? cook('color') : 'bg-dark' ?> text-primary" name="hakkimda" id="" cols="30" rows="10">Merhaba, ben Gamze Kural. 7 Ocak 1998 yılında dünyaya geldim. İstanbul'da yaşıyorum.</textarea>
                 <button class="btn btn-sm btn-primary" type="submit">Kaydet</button>
             </form>
             <a href="islem.php?islem=cikis" class="btn btn-success btn-sm mt-2 w-100">Oturumu Kapat</a><br>
